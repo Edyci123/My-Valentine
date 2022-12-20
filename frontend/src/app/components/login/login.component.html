@@ -1,0 +1,25 @@
+<div fxFlex>
+    <form
+      fxLayout="column"
+      fxLayoutAlign="start center"
+      [formGroup]="form"
+      (ngSubmit)="onSubmit()"
+    >
+      <mat-card>
+        <mat-card-title>Te iubesc bossy meu!!!</mat-card-title>
+        <mat-card-content>
+          <mat-form-field class="full-width">
+            <mat-label>Your Password</mat-label>
+            <input matInput type="password" formControlName="name" />
+          </mat-form-field>
+        </mat-card-content>
+        <mat-card-actions>
+          <div fxLayoutGap="10px" fxLayoutAlign="center start">
+            <button mat-flat-button color="primary" type="submit">Sumbit</button>
+            <button mat-flat-button color="primary" type="button">Hint</button>
+          </div>
+        </mat-card-actions>
+      </mat-card>
+    </form>
+  </div>
+  
