@@ -1,3 +1,20 @@
 .font-rancho {
-    font-family: 'Rancho', sans-serif;
+  font-size: 10vw;
+  font-family: "Rancho", sans-serif;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate3d(0.5, 0, 0.2, 0deg);
+    text-shadow: 0 0 3px red;
+  }
+  to {
+    transform: rotate3d(0.5, 0, 0.2, 359deg);
+    text-shadow: 5px 5px 15px red;
+  }
+}
+
+.rotate {
+  animation: rotation 1s 4 linear;
+  text-shadow: 2px 2px 5px red;
 }
