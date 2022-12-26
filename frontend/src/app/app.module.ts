@@ -19,6 +19,8 @@ import { AuthService } from './auth/auth.service';
 import { LoginComponent } from './components/login/login.component';
 import { IncorrectPasswordDialogComponent } from './components/login/incorrect-password-dialog/incorrect-password-dialog.component';
 import { HintDialogComponent } from './components/login/hint-dialog/hint-dialog.component';
+import { MemoriesComponent } from './components/memories/memories.component';
+import { ReasonsComponent } from './components/reasons/reasons.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { HintDialogComponent } from './components/login/hint-dialog/hint-dialog.
     LoginComponent,
     IncorrectPasswordDialogComponent,
     HintDialogComponent,
+    MemoriesComponent,
+    ReasonsComponent,
   ],
   imports: [
     BrowserModule,

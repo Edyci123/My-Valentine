@@ -15,15 +15,13 @@
 }
 
 .rotate {
-  animation: rotation 2s 3 linear;
+  animation: rotation 1.5s 3 linear;
   text-shadow: 2px 2px 10px red;
- 
+  rotate: -15deg;
 }
 
 .container {
   height: 100vh;
-  z-index: 1;
-  rotate: -15deg;
 }
 
 @keyframes heartbeat {
@@ -68,4 +66,10 @@
 .heart:after {
   left: 3vw;
   top: 0;
+}
+
+button {
+  margin: 150px 30px 0px;
+  color: #fff;
+  background-color: red;
 }

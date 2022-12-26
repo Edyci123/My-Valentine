@@ -1,5 +1,9 @@
-<div class="container" fxLayoutAlign="center center">
+<div class="container" fxLayout="column" fxLayoutAlign="center center">
     <div class="font-rancho rotate">Te iubesc, bossy meu!
         <div class="heart"></div>
+    </div>
+    <div *ngIf="isMobile">
+        <button mat-flat-button (click)="onClickMemories()">Memories</button>
+        <button mat-flat-button (click)="onClickReasons()">Reasons</button>
     </div>
 </div>
