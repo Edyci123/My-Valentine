@@ -6,15 +6,66 @@
 @keyframes rotation {
   from {
     transform: rotate3d(0.5, 0, 0.2, 0deg);
-    text-shadow: 0 0 3px red;
+    text-shadow: 0 0 20px red;
   }
   to {
     transform: rotate3d(0.5, 0, 0.2, 359deg);
-    text-shadow: 5px 5px 15px red;
+    text-shadow: 5px 5px 40px red;
   }
 }
 
 .rotate {
-  animation: rotation 1s 4 linear;
-  text-shadow: 2px 2px 5px red;
+  animation: rotation 2s 3 linear;
+  text-shadow: 2px 2px 10px red;
+ 
+}
+
+.container {
+  height: 100vh;
+  z-index: 1;
+  rotate: -15deg;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  20% {
+    transform: scale(1.25) rotate(-45deg);
+  }
+  40% {
+    transform: scale(1.5) rotate(-45deg);
+  }
+}
+
+.heart {
+  animation: heartbeat 1s infinite;
+  background-color: red;
+  display: inline-block;
+  height: 6vw;
+  margin: 0 4vw;
+  position: relative;
+  transform: rotate(-45deg);
+  position: flex; 
+  width: 6vw;
+}
+
+.heart:before,
+.heart:after {
+  content: "";
+  background-color: red;
+  border-radius: 50%;
+  height: 6vw;
+  position: absolute;
+  width: 6vw;
+}
+
+.heart:before {
+  top: -3vw;
+  left: 0;
+}
+
+.heart:after {
+  left: 3vw;
+  top: 0;
 }
