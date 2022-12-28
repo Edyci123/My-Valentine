@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 
-import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
@@ -41,7 +40,6 @@ import { ReasonsComponent } from './components/reasons/reasons.component';
     MatCardModule,
     FormsModule,
     ReactiveFormsModule,
-    FlexLayoutModule,
     MatButtonModule,
     MatDialogModule,
   ],

@@ -9,4 +9,21 @@
   button {
     color: #fff;
     background-color: red;
+    margin: 0 20px;
+  }
+
+  .centered {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .centeredButtons {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
   }
