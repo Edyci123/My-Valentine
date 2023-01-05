@@ -1,3 +1,6 @@
-<div *ngFor="let reason of reasons; let i = index" data-aos="zoom-out-up" data-aos-duration="800">
-    <app-reason [myClass]="getClass(i)" [reason]="reason"></app-reason>
+<div class="container">
+    <p class="title">These are the reasons I absolutely love my girlfriend!</p>
+    <div *ngFor="let reason of reasons; let i = index" data-aos="zoom-out-up" data-aos-duration="800">
+        <app-reason [myClass]="getClass(i)" [reason]="reason"></app-reason>
+    </div>
 </div>

@@ -18,4 +18,8 @@ export class ReasonComponent implements OnInit {
     AOS.init();
   }
 
+  getClasses(): string {
+    return 'content ' + this.myClass;
+  }
+
 }
