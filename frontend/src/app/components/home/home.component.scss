@@ -1,6 +1,13 @@
 .font-rancho {
   font-size: 10vw;
   font-family: "Rancho", sans-serif;
+  margin-bottom: 150px;
+}
+
+@media (min-width: 1000px) {
+  .font-rancho {
+    margin-top: 5%;
+  }
 }
 
 @keyframes rotation {
@@ -49,7 +56,7 @@
   margin: 0 4vw;
   position: relative;
   transform: rotate(-45deg);
-  position: flex; 
+  position: flex;
   width: 6vw;
 }
 
@@ -77,8 +84,4 @@ button {
   margin: 150px 30px 0px;
   color: #fff;
   background-color: red;
-}
-
-.datepicker {
-  margin-top: 20%;
 }

@@ -24,6 +24,8 @@ import { MemoriesComponent } from './components/memories/memories.component';
 import { ReasonsComponent } from './components/reasons/reasons.component';
 import { ReasonComponent } from './components/reasons/reason/reason.component';
 
+import { SlickCarouselModule } from 'ngx-slick-carousel';  
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +50,7 @@ import { ReasonComponent } from './components/reasons/reason/reason.component';
     MatDialogModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    SlickCarouselModule
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent],

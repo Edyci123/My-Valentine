@@ -1,18 +1,17 @@
 .container {
-    background-color: red;
+  background-color: red;
 }
 
 .container-right {
   width: 40vw;
-  height: 25vh;
-  margin-right: 4%;
-  margin-left: auto;
+  height: 20vh;
+  margin-bottom: 50px;
 }
 
 .container-left {
   width: 40vw;
-  height: 25vh;
-  margin-left: 4%;
+  height: 20vh;
+  margin-bottom: 35px;
 }
 
 .content {
@@ -21,4 +20,23 @@
   align-items: center;
   align-content: center;
   justify-content: center;
+}
+
+@media (min-width: 650px) {
+  .container-right {
+    margin-right: 4%;
+    margin-left: auto;
+  }
+  .container-left {
+    margin-left: 4%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .container-right {
+    height: 30vh;
+  }
+  .container-left {
+    height: 30vh;
+  }
 }

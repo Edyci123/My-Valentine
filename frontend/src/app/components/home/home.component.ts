@@ -45,7 +45,7 @@ export class HomeComponent implements OnInit {
     let date = formatDate(value, 'yyyy-MM-dd', 'en-US');
     if (date === '2019-09-13') {
       this.router.navigate(['/reasons']);
-    } else if (date === '2022-07-29') {
+    } else if (date === '2022-05-29') {
       this.router.navigate(['/memories']);
     }
   }
