@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/auth/auth.service';
 import { IncorrectPasswordDialogComponent } from 'src/app/components/login/incorrect-password-dialog/incorrect-password-dialog.component';
