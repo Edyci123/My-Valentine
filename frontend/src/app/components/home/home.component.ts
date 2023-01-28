@@ -1,31 +1,24 @@
 import { Router } from '@angular/router';
 import { Component, HostListener, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import {
-  BreakpointObserver,
-  Breakpoints
-} from '@angular/cdk/layout'
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { formatDate } from '@angular/common';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  
-  private code: number = 0;
-  isMobile: boolean = false;
+  code: number = 0;
+  date: any;
 
-  constructor(private router: Router, public breakpointObserver: BreakpointObserver) {}
+  constructor(
+    private router: Router,
+    public breakpointObserver: BreakpointObserver
+  ) {}
 
-  ngOnInit(): void {
-    this.breakpointObserver
-      .observe([Breakpoints.XSmall])
-      .subscribe(state => {
-        this.isMobile = state.matches;
-        console.log(state.matches);
-      })
-  }
+  ngOnInit(): void {}
 
   @HostListener('document: keypress', ['$event'])
   handleKeyboardEvent(event: KeyboardEvent): void {
@@ -40,7 +33,7 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  onClickMemories(): void { 
+  onClickMemories(): void {
     this.router.navigate(['/memories']);
   }
 
@@ -48,4 +41,12 @@ export class HomeComponent implements OnInit {
     this.router.navigate(['/reasons']);
   }
 
+  onChange(value: Date): void {
+    let date = formatDate(value, 'yyyy-MM-dd', 'en-US');
+    if (date === '2019-09-13') {
+      this.router.navigate(['/reasons']);
+    } else if (date === '2022-07-29') {
+      this.router.navigate(['/memories']);
+    }
+  }
 }
