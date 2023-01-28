@@ -22,9 +22,7 @@ import { IncorrectPasswordDialogComponent } from './components/login/incorrect-p
 import { HintDialogComponent } from './components/login/hint-dialog/hint-dialog.component';
 import { MemoriesComponent } from './components/memories/memories.component';
 import { ReasonsComponent } from './components/reasons/reasons.component';
-import { ReasonComponent } from './components/reasons/reason/reason.component';
-
-import { SlickCarouselModule } from 'ngx-slick-carousel';  
+import { ReasonComponent } from './components/reasons/reason/reason.component'; 
 
 @NgModule({
   declarations: [
@@ -49,8 +47,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     MatButtonModule,
     MatDialogModule,
     MatDatepickerModule,
-    MatNativeDateModule,
-    SlickCarouselModule
+    MatNativeDateModule
   ],
   providers: [AuthService, AuthGuard],
   bootstrap: [AppComponent],
