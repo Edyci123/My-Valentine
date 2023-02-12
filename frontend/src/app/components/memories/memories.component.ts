@@ -8,7 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class MemoriesComponent implements OnInit {
   slides = [{ img: '../../../assets/images/img1.jpg' }];
 
-  slideConfig = { slidesToShow: 1, slidesToScroll: 1, centerMode: true, adaptiveHeight: true, infinite: true };
+  slideConfig = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: true,
+    adaptiveHeight: true,
+    infinite: true,
+  };
   addSlide() {
     this.slides.push({ img: 'http://placehold.it/350x150/777777' });
   }
@@ -29,8 +35,9 @@ export class MemoriesComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    for (let i = 2; i <= 14; i++) {
-      this.slides.push({ img: '../../../assets/images/img' + i + '.jpg' });
+    for (let i = 2; i <= 105; i++) {
+      if (i != 51 && i != 77 && i != 78 && i != 105)
+        this.slides.push({ img: '../../../assets/images/img' + i + '.jpg' });
     }
   }
 }
