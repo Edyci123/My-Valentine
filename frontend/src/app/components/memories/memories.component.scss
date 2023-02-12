@@ -8,3 +8,13 @@
   height: 80vh;
   margin: auto;
 }
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  vertical-align: middle;
+  justify-content: center;
+  margin-top: 50%;
+}

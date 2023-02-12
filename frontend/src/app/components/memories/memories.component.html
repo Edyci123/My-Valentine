@@ -1,4 +1,8 @@
-<div style="margin-top: 5%;">
+<div *ngIf="getScreenHeight > getScreenWidth" class="centered">
+  <h1>Please rotate your phone</h1>
+</div>
+
+<div *ngIf="getScreenHeight < getScreenWidth" style="margin-top: 5%">
   <ngx-slick-carousel
     class="carousel"
     #slickModal="slick-carousel"
